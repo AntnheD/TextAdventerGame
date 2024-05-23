@@ -1,0 +1,70 @@
+[Crown of Aksum]
+Welcome to 'The Crown of Aksum' text adventure!
+You find yourself in the bustling streets of Addis Ababa.
+Your mission: Retrieve the legendary Crown of Aksum.
+
+Exploring Aksum:
+- You embark on a journey to Aksum.
+- You arrive at St. Mary of Zion, the oldest church.
+- Beneath the altar, you find a hidden passage.
+
+Choices:
+1. Do you enter the passage? (Yes/No)
+
+If Yes:
+- You venture deeper into the tunnel.
+- Guardian spirits challenge you with riddles.
+- You decipher ancient inscriptions and follow the clues.
+- Finally, you reach a hidden chamber.
+- The Crown of Aksum rests on a pedestal before you.
+
+Choices:
+1. Will you claim it or leave it undisturbed? (Claim/Leave)
+
+If Claim:
+- As you lift the crown, the spirits reappear.
+- They acknowledge your bravery and wisdom.
+- You have successfully retrieved the Crown of Aksum!
+
+If Leave:
+- You decide to leave the crown undisturbed.
+- The spirits bless you for your respect.
+- You return to Addis Ababa with newfound wisdom.
+
+[Book of Enoch]
+Welcome to 'The Book of Enoch' text adventure!
+You find yourself in the historical city of Gondar, Ethiopia.
+Your mission: Discover the lost Book of Enoch.
+
+Exploring Gondar:
+- You start your journey at the Fasil Ghebbi fortress.
+- You hear rumors about an ancient monastery in the Simien Mountains.
+
+Choices:
+1. Do you travel to the Simien Mountains? (Yes/No)
+
+If Yes:
+- You embark on a treacherous journey through the mountains.
+- After days of travel, you reach an ancient monastery hidden in the cliffs.
+- Inside, you find monks who speak of the sacred book guarded by spiritual protectors.
+
+Choices:
+1. Do you seek the monks' guidance to find the book? (Yes/No)
+
+If Yes:
+- The monks lead you to a hidden chamber beneath the monastery.
+- You encounter spiritual challenges testing your knowledge and courage.
+- Overcoming the challenges, you find the Book of Enoch resting on an altar.
+
+Choices:
+1. Will you take the book or leave it protected? (Take/Leave)
+
+If Take:
+- As you take the book, the spiritual protectors appear.
+- They acknowledge your determination and grant you safe passage.
+- You return to Gondar with the Book of Enoch, completing your mission!
+
+If Leave:
+- You decide to leave the book undisturbed.
+- The spiritual protectors bless you for your respect.
+- You return to Gondar with a deep sense of fulfillment and wisdom.
