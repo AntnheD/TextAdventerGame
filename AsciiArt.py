@@ -70,3 +70,27 @@ class AsciiArt:
        
         """
         self.print_colored_text(art, Fore.CYAN)
+    def crown_of_axum(self):
+        art = """
+  ____                 _ _                 _ 
+                                    o
+                                   $""$o
+                                  $"  $$
+                                   $$$$
+                                   o "$o
+                                  o"  "$
+             oo"$$$"  oo$"$ooo   o$    "$    ooo"$oo  $$$"o
+o o o o    oo"  o"      "o    $$o$"     o o$""  o$      "$  "oo   o o o o
+"$o   ""$$$"   $$         $      "   o   ""    o"         $   "o$$"    o$$
+  ""o       o  $          $"       $$$$$       o          $  ooo     o""
+     "o   $$$$o $o       o$        $$$$$"       $o        " $$$$   o"
+      ""o $$$$o  oo o  o$"         $$$$$"        "o o o o"  "$$$  $
+        "" "$"     @@@@@            "$"             @@@      @@@ "
+         "oooooooooooooooooooooooooooooooooooooooooooooooooooooo$
+          "$$$$"$$$$" $$$$$$$"$$$$$$ @ @$$$$$"$$$$$$@  $$$@@$$$$
+           $$$oo$$$$   $$$$$$o$$$$$$o" $$$$$$$$$$$$$$ o$$$$o$$$"
+           $@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$
+           $"                                                 "$
+           $"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$"$
+        """
+        self.print_colored_text(art, Fore.CYAN)
