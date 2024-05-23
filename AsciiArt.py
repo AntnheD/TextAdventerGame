@@ -57,13 +57,16 @@ class AsciiArt:
         
         
 
-# Example usage
-ascii_art = AsciiArt()
-ascii_art.welcome()
-# Add a pause to simulate game flow
-input("\nPress Enter to continue...")
-ascii_art.game_over()
-input("\nPress Enter to continue...")
-ascii_art.you_won()
-input("\nPress Enter to continue...")
-ascii_art.goodbye()
+    def book_of_enoch(self):
+        art = """
+         
+             __...--~~~~~-._   _.-~~~~~--...__
+            //               `V'               \\ 
+           //                 |                 \\ 
+          //__...--~~~~~~-._  |  _.-~~~~~~--...__\\ 
+         //__.....----~~~~._\ | /_.~~~~----.....__\\
+        ====================\\|//====================
+                dwb `---`
+       
+        """
+        self.print_colored_text(art, Fore.CYAN)
