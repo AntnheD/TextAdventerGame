@@ -63,6 +63,7 @@ class Game:
                 book_adventure.start(self)
                 break
         print(Fore.RED + "Game Over!")
+        self.soundbox.start_game_over_sound(self.configer.get_setting("game_over_sound"))
         self.soundbox.play_sound("game_over")
         print(Fore.YELLOW + f"Your final score: {self.score}")
 
