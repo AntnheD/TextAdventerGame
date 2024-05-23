@@ -23,6 +23,19 @@ for %%i in (%packages%) do (
     )
 )
 
+echo Ensuring sounds directory exists...
+if not exist sounds (
+    mkdir sounds
+)
+
+echo Checking necessary sound files...
+if not exist sounds\game_over_sound.wav (
+    echo Error: sounds\game_over_sound.wav is missing.
+    exit /b 1
+)
+
+REM Additional checks for other sound files can be added here...
+
 echo Compiling Python files...
 python -m compileall .
 
