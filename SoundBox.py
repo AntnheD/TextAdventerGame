@@ -26,9 +26,3 @@ class SoundBox:
 
     def stop_background_music(self):
         pygame.mixer.music.stop()
-
-# Example usage
-if __name__ == "__main__":
-    soundbox = SoundBox()
-    soundbox.load_sound("game_over", "game_over_sound.wav")
-    soundbox.play_sound("game_over")
