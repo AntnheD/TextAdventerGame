@@ -7,11 +7,15 @@ class SoundBox:
         self.narrator_voice = None
 
     def load_sound(self, name, file_path):
-        self.sounds[name] = pygame.mixer.Sound(file_path)
+        self.sounds[name] = file_path
 
     def play_sound(self, name):
         if name in self.sounds:
-            self.sounds[name].play()
+            if name == "game_over":
+                pygame.mixer.music.load(self.sounds[name])
+                pygame.mixer.music.play()
+            else:
+                pygame.mixer.Sound(self.sounds[name]).play()
 
     def set_narrator_voice(self, file_path):
         self.narrator_voice = pygame.mixer.Sound(file_path)
