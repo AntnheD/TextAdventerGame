@@ -13,22 +13,22 @@ class Game:
         self.ascii_art = AsciiArt()
         self.score = 0
         self.user_name = ""
-        self.rooms = ["Addis Ababa", "Aksum", "Hidden Passage", "Hidden Chamber", "Monk's Chamber", "Gondar"]
+        self.rooms = ["Addis Ababa", "Aksum", "Gondar", "Hidden Chamber", "Monk's Chamber", "Holy Trinity Church"]
         self.room_descriptions = {
             "Addis Ababa": "You find yourself in the bustling streets of Addis Ababa.",
             "Aksum": "You arrive at St. Mary of Zion, the oldest church.",
-            "Hidden Passage": "You discover a hidden passage under a loose floorboard.",
+            "Gondar": "You find yourself in the ancient city of Gondar, known for its castles.",
             "Hidden Chamber": "You find a hidden chamber filled with ancient artifacts.",
             "Monk's Chamber": "You encounter a wise monk who will test your knowledge of Ethiopia.",
-            "Gondar": "You find yourself in the ancient city of Gondar, known for its castles."
+            "Holy Trinity Church": "You stand before the Holy Trinity Church, seeking the book keeper."
         }
         self.room_connections = {
-            "Addis Ababa": ["Aksum", "Hidden Passage"],
+            "Addis Ababa": ["Aksum", "Gondar"],
             "Aksum": ["Addis Ababa", "Hidden Chamber"],
-            "Hidden Passage": ["Addis Ababa", "Hidden Chamber", "Monk's Chamber"],
-            "Hidden Chamber": ["Aksum", "Hidden Passage"],
-            "Monk's Chamber": ["Hidden Passage"],
-            "Gondar": ["Hidden Chamber"]
+            "Gondar": ["Addis Ababa", "Hidden Chamber", "Monk's Chamber"],
+            "Hidden Chamber": ["Aksum", "Gondar"],
+            "Monk's Chamber": ["Gondar", "Holy Trinity Church"],
+            "Holy Trinity Church": ["Monk's Chamber"]
         }
         self.game_state = {
             "crown_found": False,
@@ -111,12 +111,12 @@ class Game:
                     else:
                         self.game_over()
                         break
-                elif new_room == "Gondar" and not self.game_state["book_found"]:
+                elif new_room == "Holy Trinity Church" and not self.game_state["book_found"]:
                     self.ascii_art.book_of_enoch()
                     book_adventure = BookOfEnoch()
                     book_adventure.start(self)
                     self.game_state["book_found"] = True
-                    print(Fore.GREEN + "You found the Book of Enoch in Gondar!")
+                    print(Fore.GREEN + "You found the Book of Enoch in Holy Trinity Church!")
                 return new_room
             else:
                 print(Fore.RED + "Invalid choice. Please enter a valid room number.")
@@ -137,7 +137,7 @@ class Game:
             self.game_over()
 
     def game_over(self):
-        self.ascii_art.game_over()
+        self.ascii_art.game_overe()  # Call the method with the correct name
         print(Fore.RED + "Game Over!")
         self.soundbox.play_sound("game_over")
         print(Fore.YELLOW + f"Your final score: {self.score}")
