@@ -11,7 +11,7 @@ class AsciiArt:
     def print_colored_text(self, text, color):
         print(color + Style.BRIGHT + text + Style.RESET_ALL)
 
-    def game_over(self):
+    def game_overe(self):
         art = """
    _____                        ____                 
   / ____|                      / __ \                
